@@ -493,10 +493,6 @@ void HalProxy::initializeSensorList() {
                     ALOGV("Loaded sensor: %s", sensor.name.c_str());
                     sensor.sensorHandle = setSubHalIndex(sensor.sensorHandle, subHalIndex);
                     setDirectChannelFlags(&sensor, mSubHalList[subHalIndex]);
-                    if (sensor.typeAsString == "qti.sensor.wise_light") {
-                        sensor.type = SensorType::LIGHT;
-                        sensor.typeAsString = "";
-                    }
                     mSensors[sensor.sensorHandle] = sensor;
                 }
             }
