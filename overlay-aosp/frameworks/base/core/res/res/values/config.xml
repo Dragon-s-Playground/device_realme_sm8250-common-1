@@ -78,12 +78,21 @@
         <item>org.lineageos.aperture</item>
     </string-array>
 
+   <!-- Whether devices suports in-display fingerprint when screen is off -->
+    <bool name="config_supportsScreenOffUdfps">true</bool>
+    
+    <!-- Flag indicating whether we should enable smart battery. -->
+    <bool name="config_smart_battery_available">true</bool>
+    
+  <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">true</bool>
+    <bool name="config_pocketUseLightSensor">false</bool>
 
     <!-- Expected value from fast charging status file  -->
     <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
 
      <!-- Whether device has dash charging support -->
-    <bool name="config_hasDashCharger">false</bool>
+    <bool name="config_hasDashCharger">true</bool>
     <!-- Path to dash charging status file -->
     <string name="config_DashChargerStatusPath">/sys/class/power_supply/battery/fastchg_status</string>
     
