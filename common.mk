@@ -301,6 +301,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
+    init.rmx3371.rc \
     init.target.rc \
     ueventd.oplus.rc \
     ueventd.qcom.rc
